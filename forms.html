@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Module 4-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4</title>
+</head>
+
+<body>
+    <!--Exercise 1-->
+    <h1>User Registration Form</h1>
+    <form method="get" style="border: 1px solid black; padding: 10px;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <p>Profile Picture Upload:
+            <input type="file" id="Profile Picture" name="Profile Picture">
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <!--Exercise 2-->
+    <h1>User Preferences Form</h1>
+    <form method="get" style="border: 1px solid black; padding: 10px;">
+        <label for="text">About ME:</label><br>
+        <textarea id="text" name="about me" value="about me" placeholder="Write here"></textarea>
+        <br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="jo" selected>Jordan</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+        </select>
+
+        <h4>Contact Preferences</h4>
+        <fieldset>
+            <input type="radio" id="email" name="preference" value="email">
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="preference" value="phone">
+            <label for="phone">Phone</label>
+        </fieldset>
+
+        <br><input type="submit" value="Submit">
+    </form>
+    <br>
+    <!--Exercise 3-->
+    <form - action="https://example.com/submit" method="POST" target="_blank" autocomplete="off"
+        style="border: 1px solid black; padding: 10px;">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <!--Exercise 4-->
+    <h1>Survey Form</h1>
+    <form method="get" style="border: 1px solid black; padding: 10px;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="10" required><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60"><br>
+        <label for="programming language">Favorite Programming Language</label>
+        <input list="programming language" name="programming language" id="programming language">
+        <datalist id="programming language">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
