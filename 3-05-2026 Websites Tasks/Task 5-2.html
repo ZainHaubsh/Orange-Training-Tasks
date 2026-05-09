@@ -5,63 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 5-2</title>
     <style>
-        body{
+        body {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
             margin: 0;
+            font-family: sans-serif;
+            min-height: 100vh;
         }
-        nav{
-            background-color: rgba(2, 18, 51);
-            height: 70px;
+        nav {
+            background-color: #021233;
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            padding: 10px;
+            align-items: center;
+            padding: 20px 50px;
         }
-        .nav-buttons{
+
+        .nav-buttons {
+            display: flex;
             gap: 15px;
-            color:white;
-            margin:30px;
         }
-        .link{
-            margin: 15px;
-            color:white;
+
+        .link {
+            color: white;
             text-decoration: none;
+            font-size: 14px;
         }
-        footer{
-            background-color: rgba(239, 224, 203);
-            width: 100%;
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 { font-size: 40px; margin-bottom: 10px; }
+        
+        .form-group {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #efe0cb;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .nav-buttons {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
-        <div style="color:red;margin:30px;">Dollar Shave Club</div>
+        <div style="color:#ff4d4d; font-weight:bold;">DOLLAR SHAVE CLUB</div>
         <div class="nav-buttons">
             <a href="#" class="link">Shop</a>
             <a href="#" class="link">Original Content</a>
             <a href="#" class="link">Gift</a>
             <a href="#" class="link">Account</a>
-            <a href="#" class="link" >Cart</a>
+            <a href="#" class="link">Cart</a>
         </div>
     </nav>  
+
     <main>
-        <div>
         <h1>Contact Us</h1>
-        <p>Question not answered yet?We are here to help!</p>
-    </div>
-    <div>
-        <label for="answer" style="font-size: 14px;">HOW CAN WE HELP YOU TODAY*</label><br>
-        <input type="text" id="answer" name="answer" required>
-    </div>
-    <h4>Partnerships and Media Inquiries</h4>
+        <p>Question not answered yet? We are here to help!</p>
+
+        <div class="form-group">
+            <label style="font-size: 12px; font-weight:bold;">HOW CAN WE HELP YOU TODAY?*</label>
+            <input type="text" placeholder="-">
+        </div>
+
+        <p style="font-weight:bold; font-size: 14px;">Partnerships and Media Inquiries</p>
     </main>
+
     <footer>
         <h2>Questions not answered?</h2>
-        <p>Contact us></p>
+        <p>Contact us ></p>
     </footer>
 </body>
 </html>
