@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        .card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        flex: 0 1 calc(33.333% - 20px); 
+        box-sizing: border-box;
+        }
+
+        .nav-buttons {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        @media (max-width: 992px) {
+        .card {
+            flex: 0 1 calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .card {
+            flex: 0 1 100%;
+        }
+
+        .about-section {
+            flex-direction: column !important;
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+</head>
+
+<body style="margin:0;">
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%;">
+    <span style="font-weight: bold; font-size: 24px; color: #252f3a;">MyWebsite</span>
+    <nav style="display: flex;align-items: center; padding: 20px;gap: 25px;">
+        <a href="#" class="nav-buttons">Home</a>
+        <a href="#" class="nav-buttons">Services</a>
+        <a href="#" class="nav-buttons">About</a>
+        <a href="#" class="nav-buttons">Contact</a>
+    </nav>
+</header>
+    <section style="background-image:url('images.jpeg');text-align: center;color:white; background-size: cover;
+            background-position: center;
+            padding: 100px 0;">
+        <h1>Welcome to Our Website</h1>
+        <p>Creating responsive and modern web designs.</p>
+        <button type="button" style="background-color: rgba(33, 115, 201);border: none;font-size: 16px;padding: 5px 10px; border-radius:5px;color:white;padding: 10px 25px;">Get Started</button>
+    </section>
+    <h2 style="font-size:30px;text-align: center;">Our Services</h2>
+    <section style="display: flex; justify-content: center; gap:30px;padding: 40px;flex-wrap: wrap;">
+        
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service One</h3>
+            <p>Description of service one.</p>
+        </div>
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service Two</h3>
+            <p>Description of service two.</p>
+        </div>
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service Three</h3>
+            <p>Description of service three</p>
+        </div>
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service Four</h3>
+            <p>Description of service four.</p>
+        </div>
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service Five</h3>
+            <p>Description of service five.</p>
+        </div>
+        <div class="card">
+            <i class="icon">⚙️</i>
+            <h3>Service Six</h3>
+            <p>Description of service six</p>
+        </div>
+    </section><hr>
+    <section style="display:flex; justify-content:center;margin:5%;" class="about-section">
+        <div style=" flex:1; ">
+            <img src="download (1).jpeg" alt="meeting photo" style="width:80%;" class="about-section-img">
+        </div>
+        <div style="flex:1;">
+            <h2 style="font-size: 40px;">About Us</h2>
+            <h3 style="font-size: 25px;">Learn more about out company</h3>
+            <hr>
+            <p>We are a dedicated team providing high-quality web solution. Our goal is to help ypur business grow and
+                succeed online.</p>
+        </div>
+    </section>
+    <footer style="display: flex; align-items: center; justify-content: center; background-color:rgba(37, 47, 58);height:70px;color:white;">&copy; 2024 MyWebsite.
+        All rights reserved.</footer>
+</body>
+
+</html>

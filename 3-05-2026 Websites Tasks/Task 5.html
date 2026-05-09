@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        body {
+            background-color: rgba(52, 153, 221);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .box {
+            background-color: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 30px;
+            display: block;
+            margin: 30px;
+            border-radius: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            display: inline-block;
+            border: 1px solid rgb(235, 235, 235);
+            background-color: rgb(235, 235, 235);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .name-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .signup {
+            background-color: rgba(52, 153, 221);
+            color: white;
+            width: 35%;
+            font-size: large;
+            border: 0;
+            border-radius: 5px;
+            padding: 12px;
+            display: block;
+            margin-top: 20px;
+        }
+
+@media screen and (max-width: 600px) {
+    .box {
+        width: 90%;   
+        padding: 20px;  
+        margin: 20px auto;
+    }
+
+    .name-row {
+        flex-direction: column; 
+        gap: 0; 
+    }
+
+    .signup {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .box {
+        width: 60%;       
+        max-width: 500px; 
+        padding: 40px;     
+    }
+
+    .name-row {
+        display: flex;  
+        gap: 20px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <h1>Sign Up</h1>
+            <p style="color: grey;">Please fill in this form to create an account!</p>
+        </div>
+        <hr>
+        <form action="">
+            <div class="name-row">
+                <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                <input type="text" placeholder="Last Name" name="lastName" id="lastName">
+            </div>
+            <input type="email" placeholder="Email" name="email" id="email"><br>
+            <input type="password" placeholder="Password" name="password" id="password"><br>
+            <input type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword"><br>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms" style="color: grey;">I accept the <a href="#">Terms of User</a>&<a href="#">Privacy
+                    Policy</a></label>
+            <button type="submit" class="signup">Sign Up</button>
+        </form>
+    </div>
+    <p style="text-align: center; color: white;">
+    Already have an account? <a href="#" style="color: white;">Login here</a></p>
+</body>
+
+</html>

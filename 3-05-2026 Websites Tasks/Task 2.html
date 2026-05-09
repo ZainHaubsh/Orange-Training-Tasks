@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .section-bg {
+            background-color: white;
+            padding: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        .cards-section {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            flex-wrap: wrap;
+
+        }
+
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            flex: 0 1 calc(25% - 20px);
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            flex: 1 1 calc(24% - 20px);
+            min-width: 200px;
+        }
+
+        header {
+            background: white;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 100;
+            height: 60px;
+        }
+
+        .paid {
+            background-color: rgb(61, 165, 61);
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .pending {
+            background-color: orange;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .layout-horizontal {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #252f3a;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+        }
+
+        .sidebar a {
+            color: #a0aec0;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 14px;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            color: white;
+            background-color: #3e4b5b;
+            border-left: 4px solid #2173c9;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        th {
+            text-align: left;
+            background-color: #f8f9fa;
+            font-weight: 600;
+            padding: 12px;
+            border-bottom: 2px solid #edf2f7;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .hamburger-menu {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        @media (min-width: 601px) and (max-width: 992px) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .sidebar a {
+                text-align: center;
+                padding: 15px 0;
+                font-size: 10px;
+            }
+
+            .card {
+                flex: 1 1 calc(50% - 30px) !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hamburger-label {
+                display: block;
+            }
+
+            .sidebar {
+                position: fixed;
+                left: -220px;
+                top: 60px;
+                height: calc(100vh - 60px);
+                z-index: 1000;
+            }
+        }
+    </style>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div id="hamburger" class="hamburger-menu">☰</div>
+            <div style="font-weight: bold; font-size: 22px;">Dashboard</div>
+        </div>
+        <div class="header-right">
+            <input type="text" placeholder="Search..."
+                style="padding: 8px 15px; border-radius: 20px; border: 1px solid #ddd; outline: none;">
+            <img src="Zain.png" class="profile-img" alt="Zain">
+        </div>
+    </header>
+
+    <div class="layout-horizontal">
+        <aside class="sidebar">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Analytics</a>
+            <a href="#">Messages</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <div class="content-wrapper">
+            <div class="section-bg">
+                <h2 style="margin-top: 0;">Dashboard</h2>
+                <section class="cards-section">
+                    <div class="cards">
+                        <div class="card">
+                            <h3>⚙️ %7,500</h3>
+                            <p>Total Sales</p>
+                        </div>
+                        <div class="card">
+                            <h3>⚙️ 1,250</h3>
+                            <p>New Users</p>
+                        </div>
+                        <div class="card">
+                            <h3>⚙️ 3,200</h3>
+                            <p>Total Orders</p>
+                        </div>
+                        <div class="card">
+                            <h3>⚙️ 50</h3>
+                            <p>Support Tickets</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section-bg">
+                <h3 style="margin-top: 0;">Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                #10001
+                            </td>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>
+                                <span class="paid">Paid</span>
+                            </td>
+                            <td>
+                                $120.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                #10002
+                            </td>
+                            <td>
+                                Jane Smith
+
+                            </td>
+                            <td>
+                                <span class="pending">Pending</span>
+                            </td>
+                            <td>
+                                $75.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                #10003
+                            </td>
+                            <td>
+                                Mike Johnson
+
+                            </td>
+                            <td>
+                                <span class="paid">Paid</span>
+                            </td>
+                            <td>
+                                $45.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                #10004
+                            </td>
+                            <td>
+                                Sarah Brown
+
+                            </td>
+                            <td>
+                                <span class="pending">Pending</span>
+                            </td>
+                            <td>
+                                $200.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                #10005
+                            </td>
+                            <td>
+                                Chris Wilson
+
+                            </td>
+                            <td>
+                                <span class="paid">Paid</span>
+                            </td>
+                            <td>
+                                $99.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
