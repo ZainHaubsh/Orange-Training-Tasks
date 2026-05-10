@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="showResult"></div>
+    <script>
+        let op=prompt("Enter the operator");
+        let x=parseInt(prompt("Enter the first number"));
+        let y=parseInt(prompt("Enter the second number"));
+        let result;
+        calculate(op,x,y);
+        console.log("Result:",result);
+        document.getElementById("showResult").innerHTML=`${x}${op}${y}=${result}`;
+       
+        function calculate(op,x,y){
+             if(op==="+"){
+            result=x+y;
+        }
+        else if(op==="-"){
+            result= x-y;
+        }
+        else if(op==="*"){
+            result= x*y;
+        }
+        else if(op==="/"){
+            if(y===0) result="Can not divide by 0";
+            else
+            result= x/y;
+        }
+        }
+
+    </script>
+</body>
+</html>

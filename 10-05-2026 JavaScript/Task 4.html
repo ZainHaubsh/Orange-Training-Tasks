@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Condition</title>
+</head>
+<body>
+    <div id="showResult"></div>
+    <script>
+        let x=parseInt(prompt("Enter Number"));
+        let y=parseInt(prompt("Enter Number"));
+        let result;
+        check(x,y);
+        alert(result);
+        console.log(result);
+        document.getElementById("showResult").innerHTML=`${result}`;
+        function check(x,y){
+            if(x>y) result="Hello World";
+            else result="Goodbye";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+</head>
+<body>
+    <div id="showResult"></div>
+    <script>
+        let mark=80;
+        let result;
+        calculate(mark);
+        document.write(result);
+       
+        function calculate(mark){
+             if(mark<50){
+            result="Fail";
+        }
+        else if(50<=mark&& mark<=59){
+            result="D";
+        }
+        else if(60<=mark&& mark<=69){
+            result= "C";
+        }
+        else if(70<=mark&& mark<=79){
+            result= "B";
+        }
+        else if(80<=mark&& mark<=89){
+            result= "A";
+        }
+        else if(90<=mark&& mark<=100){
+            result= "A+";
+        }
+        }
+
+    </script>
+</body>
+</html>
