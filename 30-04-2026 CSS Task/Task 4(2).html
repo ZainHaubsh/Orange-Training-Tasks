@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 4(2)</title>
+    <title>Task 4(2) - Perfect Center</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: #a2c9fb; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            min-height: 100dvh; 
+            font-family: sans-serif;
+            padding: 20px; 
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 25px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 { text-align: center; color: grey; margin: 0; font-size: 22px; }
+        p { text-align: center; color: grey; margin-top: 5px; }
+
         label {
             display: block;
             color: #6a7c92;
             font-size: 14px;
-            margin-bottom: 8px;
             margin-top: 15px;
+            margin-bottom: 5px;
         }
 
         input[type="text"],
@@ -23,32 +55,50 @@
             border-radius: 10px;
             font-size: 16px;
             outline: none;
-            transition: border-color 0.3s ease;
+        }
+
+        .submit-container {
+            text-align: center;
+        }
+
+        .btn-submit {
+            background-color: #4ca1ff;
+            color: white;
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
+<body>
 
-<body style="background-color: #a2c9fb; display: flex;justify-content: center;align-items: center;">
-    <div style="background-color: white;border-radius: 25px;padding: 40px 60px;width: 100%;max-width: 450px;">
-        <h1 style="text-align: center;color:grey">CODEWITHRANDOM</h1>
-        <p style="text-align: center;color: grey;">Thank you for Being with me</p>
+    <div class="card">
+        <h1>CODEWITHRANDOM</h1>
+        <p>Thank you for Being with me</p>
+        
         <form>
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">E-mail</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password"><br>
-            <label for="repeatpassword">Repeat Password</label><br>
-            <input type="password" id="repeatpassword" name="repeatpassword"><br>
-            <div style="text-align: center;">
-                <input
-                    style="background-color: #4ca1ff;color: white;width: 60%;margin: 30px auto 0 auto;padding: 12px;border: none;border-radius: 12px;font-size: 16px;font-weight: bold;"
-                    type="submit" value="Register">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="repeatpassword">Repeat Password</label>
+            <input type="password" id="repeatpassword" name="repeatpassword">
+
+            <div class="submit-container">
+                <input type="submit" class="btn-submit" value="Register">
             </div>
         </form>
     </div>
 
 </body>
-
 </html>
