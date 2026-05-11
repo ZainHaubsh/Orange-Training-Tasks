@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Tasks</title>
+</head>
+
+<body>
+    <div id="task1"></div><hr>
+    <div id="task2"></div><hr>
+    <div id="task3"></div><hr>
+    <div id="task4"></div><hr>
+    <div id="task5"></div><hr>
+    <div id="task6"></div><hr>
+    <div id="task7"></div><hr>
+    <div id="task8"></div><hr>
+    <div id="task9"></div><hr>
+    <div id="task10"></div><hr>
+    <div id="task11"></div><hr>
+    <div id="task12"></div><hr>
+    <div id="task13"></div><hr>
+    <div id="task14"></div><hr>
+    <div id="task15"></div><hr>
+    <div id="task16"></div><hr>
+    <div id="task17"></div><hr>
+    <div id="task18"></div><hr>
+    <div id="task19"></div><hr>
+    <div id="task20"></div><hr>
+    <div id="task21"></div><hr>
+    <div id="task22"></div><hr>
+    <div id="task23"></div><hr>
+    <div id="task24"></div><hr>
+    <div id="task25"></div><hr>
+    <div id="task26"></div><hr>
+    <div id="task27"></div><hr>
+    <div id="task28"></div><hr>
+    <div id="task29"></div><hr>
+    <div id="task30"></div><hr>
+    <div id="task31"></div><hr>
+    <div id="task32"></div><hr>
+    <div id="task33"></div><hr>
+    <div id="task34"></div><hr>
+    <div id="task35"></div><hr>
+    <div id="task36"></div><hr>
+    <div id="task37"></div><hr>
+    <div id="task38"></div><hr>
+    <div id="task39"></div><hr>
+    <div id="task40"></div><hr>
+    <div id="task41"></div><hr>
+    <div id="task42"></div><hr>
+    <div id="task43"></div><hr>
+    <div id="task44"></div><hr>
+    <div id="task45"></div><hr>
+    <div id="task46"></div><hr>
+    <div id="task47"></div><hr>
+    <div id="task48"></div><hr>
+    <div id="task49"></div><hr>
+    <div id="task50"></div><hr>
+    
+    <script>
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
+        task9();
+        task10();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
+        task16();
+        task17();
+        task18();
+        task19();
+        task20();
+        task21();
+        task22();
+        task23();
+        task24();
+        task25();
+        task26();
+        task27();
+        task28();
+        task29();
+        task30();
+        task31();
+        task32();
+        task33();
+        task34();
+        task35();
+        task36();
+        task37();
+        task38();
+        task39();
+        task40();
+        task41();
+        task42();
+        task43();
+        task44();
+        task45();
+        task46();
+        task47();
+        task48();
+        task49();
+        task50();
+
+        function task1() {
+            let result = "";
+            for (let i = 1; i <= 10; i++) {
+                result += i;
+                if (i < 10)
+                    result += "-";
+            }
+            document.getElementById("task1").innerHTML = "Task1 :" + `${result}`;
+        }
+        function task2() {
+            let sum = 0;
+            for (let i = 1; i <= 30; i++) {
+                sum = sum + i;
+            }
+            document.getElementById("task2").innerHTML = "Task2 :" + `${sum}`;
+        }
+        function task3() {
+            let result = "";
+            for (let i = 1; i <= 50; i++) {
+                if (i % 2 == 0)
+                    result += `${i} `;
+            }
+            document.getElementById("task3").innerHTML = "Task3 :" + `${result}`;
+        }
+        function task4() {
+            let result = "";
+            for (let i = 10; i >= 1; i--) {
+                result += `${i} `;
+            }
+            document.getElementById("task4").innerHTML = "Task4 :" + `${result}`;
+        }
+        function task5() {
+            const letters = ["", "A", "B", "C", "D", "E"];
+            let result = "";
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= 5; j++) {
+                    if (j > (5 - i))
+                        result += letters[i] + " ";
+                    else
+                        result += `A `;
+                }
+                result += "<br>";
+            }
+            document.getElementById("task5").innerHTML = "Task5 :<br>" + `${result}`;
+        }
+        function task6() {
+            const numbers = ["", "1", "2", "3", "4", "5"];
+            let result = "";
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= 5; j++) {
+                    if (j > (5 - i))
+                        result += numbers[i] + " ";
+                    else
+                        result += `1 `;
+                }
+                result += "<br>";
+            }
+            document.getElementById("task6").innerHTML = "Task6 :<br>" + `${result}`;
+        }
+        function task7() {
+            const numbers = ["", "1", "2", "3", "4", "5"];
+            let result = "";
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= 5; j++) {
+                    if (j == i)
+                        result += numbers[i] + " ";
+                    else
+                        result += `0 `;
+                }
+                result += "<br>";
+            }
+            document.getElementById("task7").innerHTML = "Task7 :<br>" + `${result}`;
+        }
+        function task8() {
+            let x = 5;
+            let result = 1;
+            for (let i = 1; i <= x; i++) {
+                result *= i;
+            }
+            document.getElementById("task8").innerHTML = "Task8 :" + `${result}`;
+        }
+        function task9() {
+            let array = [0, 1];
+            for (let i = 1; i <= 10; i++) {
+                array.push(array[i] + array[i - 1]);
+            }
+            for (let i = 1; i <= 10; i++)
+                document.getElementById("task9").innerHTML = "Task9 :" + array.join(" ");
+        }
+        function task10() {
+            let letter = "c";
+            let sentence = "Orange Coding School";
+            let sen = sentence.toLowerCase();
+            let count = 0;
+            for (const i of sen) {
+                if (i == letter)
+                    count++;
+            }
+            document.getElementById("task10").innerHTML = "Task10 :" + count;
+        }
+        function task11() {
+            let result = "";
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= 5; j++) {
+                    sum = i * j;
+                    result += `${i} * ${j} = ${sum}   `
+                }
+                result += "<br>";
+            }
+            document.getElementById("task11").innerHTML = "Task11 :<br>" + result;
+        }
+        function task12() {
+            let result = "";
+            let x = 1;
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= i; j++) {
+                    result += `${x}  `
+                    x++;
+                }
+                result += "<br>";
+            }
+            document.getElementById("task12").innerHTML = "Task12 :<br>" + result;
+        }
+        function task13() {
+            let i = 1;
+            let result = "";
+            while (i <= 100) {
+                if (i % 7 == 0)
+                    result += i + " ";
+                i++;
+            }
+            document.getElementById("task13").innerHTML = "Task13 :" + result;
+        }
+        function task14() {
+            let i = 1;
+            let sum = 0;
+            while (i <= 100) {
+                if (i % 2 != 0)
+                    sum += i;
+                i++;
+            }
+            document.getElementById("task14").innerHTML = "Task14 :" + sum;
+        }
+        function task15() {
+            let i = 1;
+            let result = "";
+            let x;
+            while (i <= 10) {
+                x = i * i;
+                result += x + " ";
+                i++;
+            }
+            document.getElementById("task15").innerHTML = "Task15 :" + result;
+        }
+        function task16() {
+            let i = 1;
+            let result = "";
+            while (i <= 30) {
+                if (i % 3 == 0 && i % 5 == 0)
+                    result += "FizzBuzz ";
+                else if (i % 3 == 0)
+                    result += "Fizz ";
+                else if (i % 5 == 0)
+                    result += "Buzz ";
+                else
+                    result += i + " ";
+                i++;
+            }
+            document.getElementById("task16").innerHTML = "Task16 :" + result;
+        }
+        function task17() {
+            let result = "";
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= i; j++) {
+                    result += `*`
+                }
+                result += "<br>";
+            }
+            document.getElementById("task17").innerHTML = "Task17 :<br>" + result;
+        }
+        function task18() {
+            let result = "";
+            for (let j = 5; j >= 1; j--) {
+                for (let i = 1; i <= j; i++) {
+                    result += `*`
+                }
+                result += "<br>";
+            }
+            document.getElementById("task18").innerHTML = "Task18 :<br>" + result;
+        }
+        function task19() {
+            let result = "";
+
+            for (let i = 1; i <= 5; i++) {
+                let x = 1;
+                for (let j = 1; j <= i; j++) {
+                    result += `${x}`;
+                    x++;
+                }
+                result += "<br>";
+            }
+            document.getElementById("task19").innerHTML = "Task19 :<br>" + result;
+        }
+        function task20() {
+            let result = "";
+            let x = 1;
+            for (let i = 1; i <= 5; i++) {
+
+                for (let j = 1; j <= i; j++) {
+                    result += `${x}`;
+
+                }
+                x++;
+                result += "<br>";
+            }
+            document.getElementById("task20").innerHTML = "Task20 :<br>" + result;
+        }
+        function task21() {
+            let result = "";
+            let i = 1;
+            let sum = 0;
+            while (i <= 200) {
+                let sum = 0;
+                let strnum = i.toString();
+                for (let j of strnum) {
+                    sum += parseInt(j);
+                }
+                if (sum == 5)
+                    result += `${i} `;
+                i++;
+            }
+            document.getElementById("task21").innerHTML = "Task21 :" + result;
+        }
+        function task22() {//not same output but mine makes sense the exaple doesn't include 10,20...
+            let result = "";
+            let i = 1;
+            let sum = 0;
+            while (i <= 100) {
+                let strnum = i.toString();
+                let first = parseInt(strnum[0]);;
+                let last = parseInt(strnum[strnum.length - 1]);
+                if (first > last)
+                    result += i + " ";
+                i++;
+            }
+            document.getElementById("task22").innerHTML = "Task22 :" + result;
+        }
+        function task23() {
+            let result = "";
+            let i = 10;
+            let sum = 0;
+            while (i <= 100) {
+                let strnum = i.toString();
+                let first = parseInt(strnum[0]);
+                let last = parseInt(strnum[strnum.length - 1]);
+                if (first == last)
+                    result += i + " ";
+                i++;
+            }
+            document.getElementById("task23").innerHTML = "Task23 :" + result;
+        }
+        function task24() {
+            let result = "";
+            let i = 10;
+            while (i <= 300) {
+                let strnum = i.toString();
+                let product = 1;
+                for (let char of strnum) {
+                    product *= parseInt(char);
+                }
+                if (product !== 0 && i % product === 0) {
+                    result += i + " ";
+                }
+                i++;
+            }
+            document.getElementById("task24").innerHTML = "Task24 :" + result;
+        }
+        function task25() {//start from 1?
+            let result = "";
+            let i = 10;
+            while (i <= 100) {
+                let strnum = i.toString();
+                let product = 1;
+                let sum = 0;
+                for (let char of strnum) {
+                    product *= parseInt(char);
+                    sum += parseInt(char);
+                }
+                if (sum == product) {
+                    result += i + " ";
+                }
+                i++;
+            }
+            document.getElementById("task25").innerHTML = "Task25 :" + result;
+        }
+        function task26() {
+            let result = "";
+            let i = 1;
+            while (i <= 500) {
+                let x = "";
+                if (i % 3 == 0) {
+                    let strnum = i.toString();
+                    x = strnum.split('').reverse().join('');
+                    let reverse = parseInt(x);
+                    if (reverse % 3 == 0) {
+                        result += i + " ";
+                    }
+                }
+                i++;
+            }
+            document.getElementById("task26").innerHTML = "Task26 :" + result;
+        }
+        function task27() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 200) {
+                let difference = 0;
+                let strnum = i.toString();
+
+                for (let j = 0; j < strnum.length - 1; j++) {
+                    let current = parseInt(strnum[j]);
+                    let next = parseInt(strnum[j + 1]);
+                    difference += Math.abs(current - next);
+                }
+
+                if (difference == 2) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task27").innerHTML = "Task27 :" + result;
+        }
+        function task28() {// include 13?24? or have the numbers next to each other exactly after each other? but in example there is 124
+            let result = "";
+            let i = 10;
+
+            while (i <= 500) {
+                let strnum = i.toString();
+                let ascending = true;
+
+                for (let j = 0; j < strnum.length - 1; j++) {
+                    let current = parseInt(strnum[j]);
+                    let next = parseInt(strnum[j + 1]);
+                    if (next != current + 1) //or next>current
+                        ascending = false;
+                }
+
+                if (ascending == true) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task28").innerHTML = "Task28 :" + result;
+        }
+        function task29() {// include 31?42?41? or have the numbers next to each other exactly after each other? but in example there is 124
+            let result = "";
+            let i = 10;
+
+            while (i <= 500) {
+                let strnum = i.toString();
+                let descending = true;
+
+                for (let j = 0; j < strnum.length - 1; j++) {
+                    let current = parseInt(strnum[j]);
+                    let next = parseInt(strnum[j + 1]);
+                    if (current != next + 1) //or current> next
+                        descending = false;
+                }
+
+                if (descending == true) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task29").innerHTML = "Task29 :" + result;
+        }
+        function task30() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 300) {
+                let strnum = i.toString();
+                let sum = 0;
+
+                for (let j = 0; j < strnum.length - 1; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                }
+                let lastDigit = parseInt(strnum[strnum.length - 1]);
+                if (sum == lastDigit) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task30").innerHTML = "Task30 :" + result;
+        }
+        function task31() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 200) {
+                let strnum = i.toString();
+                let sum = 0;
+                for (let char of strnum) {
+                    sum += parseInt(char);
+                }
+
+                if (sum > 10) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task31").innerHTML = "Task31 :" + result;
+        }
+        function task32() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 500) {
+                let strnum = i.toString();
+                let sum = 0;
+                let prime = true;
+
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                }
+                for (let j = 2; j < sum / 2; j++) {
+                    if (sum % j == 0)
+                        prime = false;
+                }
+                if (prime == true) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task32").innerHTML = "Task32 :" + result;
+        }
+        function task33() {//they didnt start from 11?
+            let result = "";
+            let i = 10;
+
+
+            while (i <= 300) {
+                let strnum = i.toString();
+                let same = false;
+
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    let next = parseInt(strnum[j + 1]);
+                    if (current = next)
+                        same = true;
+                }
+                if (same == true) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task33").innerHTML = "Task33 :" + result;
+        }
+        function task34() {
+            let result = "";
+            let i = 10;
+            while (i <= 200) {
+                let strnum = i.toString();
+                let x = strnum.split('').reverse().join('');
+                let reverse = parseInt(x);
+                if (reverse > i) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task34").innerHTML = "Task34 :" + result;
+        }
+        function task35() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 500) {
+                let strnum = i.toString(); let product = 1;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    product *= current;
+
+                }
+                if (product % 5 == 0) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task35").innerHTML = "Task35 :" + result;
+        }
+        function task36() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 300) {
+                let strnum = i.toString();
+                let sum = 0;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                }
+                let product = strnum.length * 5;
+                if (sum == product) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task36").innerHTML = "Task36 :" + result;
+        }
+        function task37() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 500) {
+                let strnum = i.toString();
+                let x = strnum.split('').reverse().join('');
+                let reverse = parseInt(x);
+                if (reverse % 2 == 0) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task37").innerHTML = "Task37 :" + result;
+        }
+        function task38() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 300) {
+                let strnum = i.toString();
+                let first = strnum[0];
+                let last = strnum[strnum.length - 1];
+                if (first == last * last) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task38").innerHTML = "Task38 :" + result;
+        }
+        function task39() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 500) {
+                let strnum = i.toString();
+                let sum = 0;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                }
+                if (sum % strnum.length == 0) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task39").innerHTML = "Task39 :" + result;
+        }
+        function task40() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let sum = 0;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                }
+                if (sum == 15) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task40").innerHTML = "Task40 :" + result;
+        }
+        function task41() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let sum = 0;
+                let product = 1;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                    product *= current;
+                }
+                if (sum == product) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task41").innerHTML = "Task41 :" + result;
+        }
+        function task42() {
+            let result = "";
+            let i = 10;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let x = strnum.split("").reverse().join("");
+                let reverse = parseInt(x);
+                if (reverse == i + 9) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task42").innerHTML = "Task42 :" + result;
+        }
+        function task43() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let double = (i * i).toString();
+                if (strnum[strnum.length - 1] == double[double.length - 1] && strnum[strnum.length - 2] == double[double.length - 2]) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task43").innerHTML = "Task43 :" + result;
+        }
+        function task44() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let x = strnum.split("").reverse().join("");
+                let reverse = parseInt(x);
+                if ((i - reverse) % 9 == 0) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task44").innerHTML = "Task44 :" + result;
+        }
+        function task45() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let sum = 0;
+                let strnum = i.toString();
+                for (let j = 0; j < strnum.length; j++) {
+                    sum += parseInt(strnum[j]);
+                }
+                if (sum == strnum.length) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task45").innerHTML = "Task45 :" + result;
+        }
+        function task46() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let sum = 0;
+                let strnum = i.toString();
+                for (let j = 0; j < strnum.length; j++) {
+                    sum += parseInt(strnum[j]);
+                }
+                if (sum * sum == i) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task46").innerHTML = "Task46 :" + result;
+        }
+        function task47() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let sum = 0;
+                let strnum = i.toString();
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j])
+                    sum += (current * current * current);
+                }
+                if (sum == i) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task47").innerHTML = "Task47 :" + result;
+        }
+        function task48() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let x = strnum.split("").reverse().join("");
+                let reverse = parseInt(x);
+                let isPrime = true;
+                if (reverse <= 1) {
+                    isPrime = false;
+                } else {
+                    let j = 2;
+                    while (j <= Math.sqrt(reverse)) {
+                        if (reverse % j === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                        j++;
+                    }
+                }
+
+                if (isPrime) {
+                    result += i + " ";
+                }
+
+                i++;
+            }
+            document.getElementById("task48").innerHTML = "Task48: " + result;
+        }
+        function task49() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let sum = 0;
+                let product = 1;
+                for (let j = 0; j < strnum.length; j++) {
+                    let current = parseInt(strnum[j]);
+                    sum += current;
+                    product *= current;
+                }
+                if ((sum * sum) == product)
+                    result += i + " ";
+                i++;
+            }
+
+            document.getElementById("task49").innerHTML = "Task49: " + result;
+        }
+        function task50() {
+            let result = "";
+            let i = 1;
+
+            while (i <= 1000) {
+                let strnum = i.toString();
+                let x = strnum.split("").reverse().join("");
+                let reverse = parseInt(x);
+                let reve = reverse * i;
+                let rev = reve.toString();
+                if (rev[rev.length - 1] == 1)
+                    result += i + " ";
+                i++;
+            }
+
+            document.getElementById("task50").innerHTML = "Task50: " + result;
+        }
+
+    </script>
+</body>
+
+</html>
