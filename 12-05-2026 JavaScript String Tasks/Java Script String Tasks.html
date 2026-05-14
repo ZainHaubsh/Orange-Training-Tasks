@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Tasks</title>
+</head>
+<body>
+    <div id="task1"></div><hr>
+    <div id="task2"></div><hr>
+    <div id="task3"></div><hr>
+    <div id="task4"></div><hr>
+    <div id="task5"></div><hr>
+    <div id="task6"></div><hr>
+    <div id="task7"></div><hr>
+    <div id="task8"></div><hr>
+    <div id="task9"></div><hr>
+    <div id="task10"></div><hr>
+    <div id="task11"></div><hr>
+    <div id="task12"></div><hr>
+    <div id="task13"></div><hr>
+    <div id="task14"></div><hr>
+    <div id="task15"></div><hr>
+    <div id="task16"></div><hr>
+    <div id="task17"></div><hr>
+    <div id="task18"></div><hr>
+    <div id="task19"></div><hr>
+    <div id="task20"></div><hr>
+    <div id="task21"></div><hr>
+    <div id="task22"></div><hr>
+    <div id="task23"></div><hr>
+    <div id="task24"></div><hr>
+    <div id="task25"></div><hr>
+    <div id="task26"></div><hr>
+    <div id="task27"></div><hr>
+    <div id="task28"></div><hr>
+    <div id="task29"></div><hr>
+    <div id="task30"></div><hr>
+
+
+    <script>
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
+        task9();
+        task10();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
+        task16();
+        task17();
+        task18();
+        task19();
+        task20();
+        task21();
+        task22();
+        task23();
+        task24();
+        task25();
+        task26();
+        task27();
+        task28();
+        task29();
+        task30();
+        
+
+        function task1(){
+            let a="Hello";
+            let b="World";
+            let sentence=a.concat(" ",b);
+            document.getElementById("task1").innerHTML="Task 1: "+sentence;
+        }
+        function task2(){
+            let a="JavaScript";
+            let len=a.length;
+            document.getElementById("task2").innerHTML="Task 2: "+len;
+        }
+        function task3(){
+            let a="Programming";
+            let first=a.charAt(0);
+            document.getElementById("task3").innerHTML="Task 3: "+first;
+        }
+        function task4(){
+            let a="coding is fun";
+            let word=a.slice(0, 6); 
+            document.getElementById("task4").innerHTML="Task 4: "+word;
+        }
+        function task5(){
+            let a="cat";
+            let result=a.replace("a","e");
+            document.getElementById("task5").innerHTML="Task 5: "+result;
+        }
+        function task6(){
+            let a="javascript";
+            let result=a.toUpperCase();
+            document.getElementById("task6").innerHTML="Task 6: "+result;
+        }
+        function task7(){
+            let a="apple,banana,orange";
+            let result=a.split();
+            document.getElementById("task7").innerHTML="Task 7: "+result;
+        }
+        function task8(){
+            let a=["hello", "world"];
+            let result=a.join(" ");
+            document.getElementById("task8").innerHTML="Task 8: "+result;
+        }
+        function task9(){
+            let a=" hello world ";
+            let result=a.trim();
+            document.getElementById("task9").innerHTML="Task 9: "+result;
+        }
+        function task10(){
+            let a="hello world";
+            let result=a.includes("world");
+            document.getElementById("task10").innerHTML="Task 10: "+result;
+        }
+        function task11(){
+            let a="hello";
+            let result=a.split("").reverse().join("");
+            document.getElementById("task11").innerHTML="Task 11: "+result;
+        }
+        function task12(){
+            let a="elephant";
+            let result=a.match(/e/g);
+            let count = result .length;
+            document.getElementById("task12").innerHTML="Task 12: "+count;
+        }
+        function task13(){
+            let a="racecar";
+            let result=false;
+            let reverse=a.split("").reverse().join("");
+            if(a==reverse)
+            result=true;
+            document.getElementById("task13").innerHTML="Task 13: "+result;
+        }
+        function task14(){
+            let a="hello world";
+            let word1=a.slice(0,5);
+            let word2=a.slice(6,11);
+            word1=word1.charAt(0).toUpperCase()+word1.slice(1);
+            word2=word2.charAt(0).toUpperCase()+word2.slice(1);
+            result=word1.concat(" ",word2);
+            document.getElementById("task14").innerHTML="Task 14: "+result;
+        }
+        function task15(){
+            let a="1234.5678";
+            let result=a.slice(0,7);
+            document.getElementById("task15").innerHTML="Task 15: "+result;
+        }
+        function task16(){
+            let a = "There are 3 apples and 2 oranges";
+            let words = a.split(" "); 
+            let result = [];
+            for (let i = 0; i < words.length; i++) {
+        if (words[i]=="2" ||words[i]=="3") 
+            result.push(words[i]);
+        }
+            document.getElementById("task16").innerHTML="Task 16: "+result.join(",");
+        }
+        function task17(){
+            let a="example@email.com";
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let result = emailPattern.test(a);
+            document.getElementById("task17").innerHTML="Task 17: "+result;
+        }
+        function task18(){
+            let a="This is a bad word";
+            let result=a.replace("bad","good");
+            document.getElementById("task18").innerHTML="Task 18: "+result;
+        }
+        function task19() {
+            let a = "aabbc";
+            let result = "";
+            for (let i = 0; i < a.length; i++) {
+                let char = a.charAt(i); 
+                
+                if (!result.includes(char)) {
+                    result += char; 
+                }
+            }
+            document.getElementById("task19").innerHTML = "Task 19: " + result;
+        }
+        function task20(){
+            let a="hello";
+            let result=a.split("").sort().join("");
+            document.getElementById("task20").innerHTML="Task 20: "+result;
+        }
+        function task21(){
+            let a="listen";
+            let b="silent";
+            let result=true;
+            a=a.split("").sort().join("");
+            b=b.split("").sort().join("");
+            result=(a===b);
+            document.getElementById("task21").innerHTML="Task 21: "+result;
+        }
+        function task22(){
+            let a="The quick brown fox";
+            let result=a.split(" ").reverse().join(" ");
+            document.getElementById("task22").innerHTML="Task 22: "+result;
+        }
+        function task23(){
+            let a="Web development is fascinating";
+            let result=a.split(" ").sort (function(a, b) {
+        return b.length - a.length;});
+            document.getElementById("task23").innerHTML="Task 23: "+result[0];
+        }
+        function task24(){
+            let a="A man, a plan, a canal, Panama!";
+            let str="";
+            a=a.toLowerCase();
+            for (let i = 0; i < a.length; i++) {
+        let char = a[i];
+        if (char >= 'a' && char <= 'z') {
+            str += char;
+        }
+    }
+            let b=str.split("").reverse().join("");
+            let result=(str==b) 
+            
+            document.getElementById("task24").innerHTML="Task 24: "+result;
+        }
+        function task25(){
+            let a = "mississippi";
+            let result = {}; 
+            for (let i = 0; i < a.length; i++) {
+                let char = a[i];
+                if (result[char]) {
+                    result[char] += 1;
+                } else {
+                    result[char] = 1;
+                }
+            }
+             document.getElementById("task25").innerHTML = "Task 25: " + JSON.stringify(result);
+}
+        function task26(){
+            let a="Hello World";
+            let result=a.replace("a","1");
+            result=result.replace("e","2");
+            result=result.replace("i","3");
+            result=result.replace("o","4");
+            result=result.replace("u","5");
+
+            document.getElementById("task26").innerHTML="Task 26: "+result;
+        }
+        function task27(){
+            let a="JavaScript is fun";
+            let result=a.startsWith("Java");
+            document.getElementById("task27").innerHTML="Task 27: "+result;
+        }
+        function task28(){
+            let a="image.png";
+            let result=a.endsWith("png");
+            document.getElementById("task28").innerHTML="Task 28: "+result;
+        }
+        function task29(){
+            let a="";
+            let result=a.padStart(6,"ha");
+            document.getElementById("task29").innerHTML="Task 29: "+result;
+        }
+        function task30(){
+            let a="Hello World";
+            let result=a.indexOf("o");
+            document.getElementById("task30").innerHTML="Task 30: "+result;
+        }
+        
+
+    </script>
+    
+</body>
+</html>

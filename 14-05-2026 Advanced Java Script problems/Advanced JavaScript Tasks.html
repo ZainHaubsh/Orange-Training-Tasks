@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript Tasks</title>
+</head>
+<body>
+    <div id="task1"></div><hr>
+    <div id="task2"></div><hr>
+    <div id="task3"></div><hr>
+    <div id="task4"></div><hr>
+    <div id="task5"></div><hr>
+    <div id="task6"></div><hr>
+    <div id="task7"></div><hr>
+    <div id="task8"></div><hr>
+    <div id="task9"></div><hr>
+    <div id="task10"></div><hr>
+    <div id="task11"></div><hr>
+    <div id="task12"></div><hr>
+    <div id="task13"></div><hr>
+    <div id="task14"></div><hr>
+    <div id="task15"></div><hr>
+    <div id="task16"></div><hr>
+    <div id="task17"></div><hr>
+    <div id="task18"></div><hr>
+    <div id="task19"></div><hr>
+    <div id="task20"></div><hr>
+    <div id="task21"></div><hr>
+    <div id="task22"></div><hr>
+    <div id="task23"></div><hr>
+    <div id="task24"></div><hr>
+    <div id="task25"></div><hr>
+    <div id="task26"></div><hr>
+    <div id="task27"></div><hr>
+    <div id="task28"></div><hr>
+    <div id="task29"></div><hr>
+    <div id="task30"></div><hr>
+
+    <script>
+        task1([1,2,3,4,5]);
+        task2([1,2,3,4,5]);
+        task3([1,2,3,4,5]);
+        task4([1,2,3,4]);
+        task5([1,2,3]);
+        task6([1,2,2,3,4,4,5]);
+        task7([4,9,2,10,6]);
+        task8([4,9,2,10,6]);
+        task9([10,5,20,3,8]);
+        task10([10,5,20,3,8]);
+        task11([1,2,3,2,4,2]);
+        task12([1,2,3,4],[3,4,5,6]);
+        task13([1,2,3,4],[3,4,5,6]);
+        task14([1,2,3],[3,4,5]);
+        task15([5,-2,10,-3,7]);
+        task16(["alex","mohammad","ali","sara"],4);
+        task17(["apple","banana","car","dog"],"a");
+        task18(["alex","mohammad","ali","sara"],4);
+        task19(["alex","mohammad","ali","sara"]);
+        task20(["alex","mohammad","ali","sara"]);
+        task21(["apple","hi","banana"]);
+        task22([1,2,3,4,5,6]);
+        task23([1,2,3,4,5,6]);
+        task24([1,2,3,4,5,6]);
+        task25([1,2,3,4,5,6]);
+        task26([1,2,3,5,6]);
+        task27([2, 7, 11, 15],9);
+        task28([1,2,3,4,5],2);
+        task29([1,2,3,4,5,6],2);
+        task30(["hi","cat","dog","apple"]);
+
+        function task1(arr){
+            let first=arr.slice(0,1);
+            let last=arr.slice(-1);
+            let result=first.concat(last);
+            document.getElementById("task1").innerHTML="Task1: "+result;
+        }
+        function task2(arr){
+            let a=arr.splice(0,2);
+            let b=arr.splice(1,2);
+            let result=a.concat(b);
+            document.getElementById("task2").innerHTML="Task2: "+result;
+        }
+        function task3(arr){
+            let a=arr.splice(0,1);
+            let b=arr.splice(-1);
+            arr.push(a);
+            arr.unshift(b);
+            arr=arr.toString();
+            document.getElementById("task3").innerHTML="Task3: "+arr;
+        }
+        function task4(arr){
+            let a=arr.splice(0,2);
+            arr.unshift(10);
+            arr=a.concat(arr);
+            document.getElementById("task4").innerHTML="Task4: "+arr;
+        }
+        function task5(arr){
+            arr=arr.concat(arr);
+            document.getElementById("task5").innerHTML="Task5: "+arr;
+        }
+        function task6(arr){
+            let a=[];
+            for (let i=0;i<arr.length;i++){
+                if (!a.includes(arr[i]))
+                a.push(arr[i]);
+            }
+            document.getElementById("task6").innerHTML="Task6: "+a;
+        }
+        function task7(arr){
+            arr=arr.sort((a, b) => a - b);
+            let result=arr[arr.length-2];
+            document.getElementById("task7").innerHTML="Task7: "+result;
+        }
+        function task8(arr){
+            arr=arr.sort((a, b) => a - b);
+            let result=arr[1];
+            document.getElementById("task8").innerHTML="Task8: "+result;
+        }
+        function task9(arr){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(arr[i]<10)
+            a.push(arr[i]);
+            document.getElementById("task9").innerHTML="Task9: "+ a;
+        }
+        function task10(arr){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(arr[i]>=10)
+            a.push(arr[i]);
+            document.getElementById("task10").innerHTML="Task10: "+ a;
+        }
+        function task11(arr){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(arr[i]==2)
+            a.push(arr[i]);
+            document.getElementById("task11").innerHTML="Task11: "+ a.length;
+        }
+        function task12(arr,arr2){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(arr2.includes(arr[i]))
+            a.push(arr[i]);
+            document.getElementById("task12").innerHTML="Task12: "+ a;
+        }
+        function task13(arr,arr2){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(!arr2.includes(arr[i]))
+            a.push(arr[i]);
+            document.getElementById("task13").innerHTML="Task13: "+ a;
+        }
+        function task14(arr,arr2){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(!a.includes(arr[i]))
+            a.push(arr[i]);
+        for(let i=0;i<arr.length;i++)
+            if(!a.includes(arr2[i]))
+            a.push(arr2[i]);
+            document.getElementById("task14").innerHTML="Task14: "+ a;
+        }
+        function task15(arr){
+            let a=[];
+            for(let i=0;i<arr.length;i++)
+            if(arr[i]>0)
+            a.push(arr[i]);
+            document.getElementById("task15").innerHTML="Task15: "+ a;
+        }
+        function task16(arr,len){
+            let a=arr.filter(function(word) {
+                return word.length > len; 
+            });
+            document.getElementById("task16").innerHTML="Task16: "+ a;
+        }
+        function task17(arr,letter){
+            let a=arr.filter(function(word) {
+                return word.includes(letter); 
+            });
+            document.getElementById("task17").innerHTML="Task17: "+ a.length;
+        }
+        function task18(arr,len){
+            let a=arr.filter(function(word) {
+                return word.length >= len; 
+            });
+            document.getElementById("task18").innerHTML="Task18: "+ a;
+        }
+        function task19(arr){
+            let a=arr.sort((a,b)=>a.length-b.length)
+            document.getElementById("task19").innerHTML="Task19: "+ a[a.length-1];
+        }
+        function task20(arr){
+            let a=arr.sort((a,b)=>a.length-b.length)
+            document.getElementById("task20").innerHTML="Task20: "+ a[0];
+        }
+        function task21(arr){
+            let a=arr.sort((a,b)=>a.length-b.length);
+            document.getElementById("task21").innerHTML="Task21: "+ a;
+        }
+        function task22(arr){
+            let a=[];
+            for(let i=0;i<arr.length;i++){
+                if (i%2==0)
+                a.push(arr[i]);
+            }
+
+            document.getElementById("task22").innerHTML="Task22: "+ a;
+        }
+        function task23(arr){
+            let a=[];
+            let sum=0;
+            for(let i=0;i<arr.length;i++){
+                if (arr[i]%2==0)
+                sum+=arr[i];
+            }
+
+            document.getElementById("task23").innerHTML="Task23: "+ sum;
+        }
+        function task24(arr){
+            let a=[];
+            let sum=0;
+            for(let i=0;i<arr.length;i++){
+                if (i%2!=0)
+                sum+=arr[i];
+            }
+            document.getElementById("task24").innerHTML="Task24: "+ sum;
+        }
+        function task25(arr){
+            let a=[];
+            let sum=0;
+            for(let i=0;i<arr.length;i++){
+                a.unshift(arr[i]);
+            }
+            document.getElementById("task25").innerHTML="Task25: "+a;
+        }
+        function task26(arr){
+            let a=[];
+            let result=0;
+            for(let i=0;i<arr.length-1;i++){
+                let current=arr[i];
+                let next=arr[i+1];
+                if(next-current!=1)
+                result=current+1;
+                
+            }
+            document.getElementById("task26").innerHTML="Task26: "+result;
+        }
+        function task27(arr,target){
+            let a = [];
+            for (let i = 0; i < arr.length - 1; i++){
+                for (let j = i + 1; j < arr.length; j++){
+                    if (arr[i] + arr[j] == target){
+                        a.push(arr[i]);
+                        a.push(arr[j]);
+                        break; 
+                    }
+                }
+            }
+            document.getElementById("task27").innerHTML = "Task27: " + a;
+        }
+        function task28(arr,steps){ 
+            for (let i = 0; i < steps; i++) {
+                let lastElement = arr.pop(); 
+                arr.unshift(lastElement); 
+            }
+            document.getElementById("task28").innerHTML = "Task28: " + arr;
+        }
+        function task29(arr,size){
+            let result=[];
+            for (let i = 0; i < arr.length; i += size) {
+                let a = arr.slice(i, i + size);
+                result.push(a);
+            }
+            document.getElementById("task29").innerHTML="Task29: "+JSON.stringify(result);
+        }
+        function task30(arr){
+            let result= {};
+            for (let i = 0; i < arr.length; i++) {
+                let len=arr[i].length;
+                if (!result[len]) {
+                    result[len] = [];
+                }
+                result[len].push(arr[i]);
+            }
+            document.getElementById("task30").innerHTML="Task30: "+JSON.stringify(result);
+        }
+    </script>
+    
+</body>
+</html>
